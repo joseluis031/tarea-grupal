@@ -36,7 +36,17 @@ def comparar_Notas():
         nota_total_Carlos += 1
     else:
         pass
+    a = nota1 + nota2 + nota3
+    b = nota4 + nota5 + nota6
+    print("La nota total de lucía es:", a)
+    print("La nota total de Carlos es:", b)
     
-    print("La nota total de lucía es:", nota1 + nota2 + nota3)
-    print("La nota total de Carlos es:", nota4 + nota5 + nota6)
+    if a > b:
+        print("Lucía tiene mas nota")
+    elif a < b:
+        print("Carlos tiene mas nota")
+    else:
+        print("Tienen la misma nota")
 comparar_Notas()
+
+
