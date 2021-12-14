@@ -36,3 +36,7 @@ def comparar_Notas():
         nota_total_Carlos += 1
     else:
         pass
+    
+    print("La nota total de lucía es:", nota1 + nota2 + nota3)
+    print("La nota total de Carlos es:", nota4 + nota5 + nota6)
+comparar_Notas()
