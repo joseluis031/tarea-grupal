@@ -5,7 +5,7 @@ matriz = [
     [random.randint(0,10),random.randint(0,10)]
 ]
 def print_matriz(matriz):
-    for i in range():
+    for i in range(2):
         print(matriz[i])
         
 print_matriz(matriz)

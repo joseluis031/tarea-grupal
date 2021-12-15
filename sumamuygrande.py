@@ -1,8 +1,15 @@
-matriz = [
-    [29686869, 425555,2455],
-    [6688678, 86599568, 4958739]
-]
+import random
 
+matriz = [
+    [random.randint(1000,1000000), random.randint(1000,1000000),random.randint(1000,1000000)],
+    [random.randint(1000,1000000), random.randint(1000,1000000), random.randint(1000,1000000)]
+]
+def print_matriz(matriz):
+    for i in range(2):
+        print(matriz[i])
+        
+print_matriz(matriz)
+        
 elementos = 0
 suma = 0
 
