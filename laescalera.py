@@ -11,8 +11,8 @@ import sys
 def escalera(n):
     for i in range(0, n):
         linea = ""
-        for k in range(0,n-1-i):
-            linea = linea + " "
+        for k in range(0,1-i):
+            linea = linea + ""
         for j in range(0,i + 1):
             linea = linea + "€"
         print(linea)
