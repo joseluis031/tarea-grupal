@@ -18,4 +18,37 @@ def versus(piedras_totales,piedras_elegidas):
                 pass
     return piedras_elegidas
 
-versus(piedras_totales,piedras_elegidas)
+turnos = random.randint(1,2)
+while True:
+    if turnos == 1:
+        print("Turno del jugador 1")
+        piedras_elegidas = versus(piedras_totales, piedras_elegidas)
+        if piedras_elegidas == 2:
+            piedras_totales -= 2
+            print("Ha retirado 2 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 3:
+            piedras_totales -= 3
+            print("Ha retirado 3 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 5:
+            print("Ha retirado 5 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        else:
+            pass
+    else:
+        print("Turno del jugador 2")
+        piedras_elegidas = versus(piedras_totales, piedras_elegidas)
+        if piedras_elegidas == 2:
+            piedras_totales -= 2
+            print("Ha retirado 2 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 3:
+            piedras_totales -= 3
+            print("Ha retirado 3 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 5:
+            print("Ha retirado 5 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        else:
+            pass  
