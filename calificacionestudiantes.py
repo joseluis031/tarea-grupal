@@ -7,7 +7,7 @@ def notas_1estudiante():
     if notas[0] < 40:
         print("El estudiante 1 esta suspenso")
     elif notas[0] > 40:
-        a = 75 - notas[0]
+        a = multiplos_5_apartirde_40[7] - notas[0]
         if a <= 3:
             print("La nota de estudiante 1 se redondeará a 75")
         
@@ -17,7 +17,7 @@ def notas_2estudiante():
     if notas[1] < 40:
         print("El estudiante 2 esta suspenso")
     elif notas[1] > 40:
-        b = 70 - notas[1]
+        b = multiplos_5_apartirde_40[6] - notas[1]
         if b <= 3:
             print("La nota de estudiante 2 se redondeará a 75")
             
@@ -48,6 +48,5 @@ def notas_4estudiante():
         f = 40 - notas[3]
         if f <= 3:
             print("La nota de estudiante 1 se redondeará a 40")
-            
             
 notas_4estudiante()
