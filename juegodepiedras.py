@@ -25,7 +25,7 @@ def vs(piedras_totales,piedras_elegidas):
     return p
 
 
-turnos = random.randint(1,2)
+turnos = 1
 while piedras_totales > 1:
     if turnos == 1:
         print("Turno del jugador 1")
@@ -42,7 +42,7 @@ while piedras_totales > 1:
             piedras_totales -= 5
             print("Ha retirado 5 piedras")
             print("Quedan:", piedras_totales, "piedras")
-        
+        turnos = 2
     elif turnos == 2:
         print("Turno del jugador 2")
         if piedras_elegidas == 2:
@@ -57,4 +57,12 @@ while piedras_totales > 1:
             piedras_totales -=5
             print("Ha retirado 5 piedras")
             print("Quedan:", piedras_totales, "piedras")
+        turnos = 1
+while piedras_totales < 2:
+    if turnos == 2:
+        print("No puedes quitar mas piedras, ha ganado el jugador 1")
         break
+    elif turnos == 1:
+        print("No puedes quitar mas piedras, ha ganado el jugador 2")
+        break
+    
