@@ -7,13 +7,14 @@ Dada una matriz de números enteros N, tenemos que hacer la suma de sus elemento
 
 El diagrama de flujos es el siguiente:
 
+![suma matriz simple](https://user-images.githubusercontent.com/91721888/146649137-90fd8964-6c55-4235-b87b-7aadb7fd8197.png)
 
 
 El código de la suma simple de la matriz es el siguiente:
 ```
 
 ```
-# 2.Ejercicio: Compara loas problemas
+# 2.Ejercicio: Compara los problemas
 
 Lucía y Carlos crearon cada uno un problema para su posterior calificación.
 Un revisor califica los dos problemas, otorgando puntos en una escala del 1 al 100 para tres 
@@ -34,6 +35,7 @@ La matriz de retorno es [1, 1] con la puntuación de Lucía primero y la de Carl
 
 El diagrama de flujos es el siguiente:
 
+![figma comparar notas](https://user-images.githubusercontent.com/91721888/146649175-667df933-27a0-44d8-bbfb-3ca2f6b4e77d.png)
 
 
 El código de comparar los problemas es:
@@ -47,6 +49,7 @@ que algunos de esos números enteros pueden ser bastante grandes.
 
 El diagrama de flujos es el siguiente:
 
+![suma grande matriz](https://user-images.githubusercontent.com/91721888/146649189-f3188b6d-3ca5-4205-bf0f-c8036d9809ac.png)
 
 
 El código de una suma muy grande es:
@@ -64,7 +67,7 @@ precedida por espacios.
 Escribe un programa que imprima una escalera de tamaño n.
 
 EJERCICIO: LA ESCALERA
-Esta es una escalera de tamaño n= 4:
+Esta es una escalera de tamaño n:
  #
  ##
 ###
@@ -75,6 +78,7 @@ Escribe un programa que imprima una escalera de tamaño n.
 
 El diagrama de flujos es el siguiente:
 
+![figma escalera](https://user-images.githubusercontent.com/91721888/146649222-6109df5a-2805-43cf-b55d-792c59e57f6b.png)
 
 
 El código de la esclaera es:
@@ -96,6 +100,7 @@ el juego si existe un movimiento ganador.
 
 El diagrama de flujos es el siguiente:
 
+![figma piedras](https://user-images.githubusercontent.com/91721888/146649230-90e5d8dc-c494-402d-bcff-ad58020d4f8a.png)
 
 
 El código del juego de las piedras es el siguiente:
@@ -123,6 +128,7 @@ laberinto.
 
 El diagrama de flujos es el siguiente:
 
+![figma rana](https://user-images.githubusercontent.com/91721888/146649237-5ef5af91-a4a5-4c34-ac3f-e1a9864106c0.png)
 
 
 El código de la rana es el siguiente:
@@ -147,6 +153,7 @@ el proceso de redondeo
 
 El diagrama de flujos es el siguiente;
 
+![figma calificaciones estudiantes](https://user-images.githubusercontent.com/91721888/146649244-50be06a1-26d3-4151-b02c-b562c522f0bb.png)
 
 
 El código de estudiantes de calificación es:
