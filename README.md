@@ -284,6 +284,9 @@ siguientes características:
 • Dos celdas cualesquiera de la tabla se consideran adyacentes si comparten un lado.
 • El laberinto está rodeado por una pared sólida hecha de obstáculos.
 • Algunos pares de celdas libres están conectados por un túnel bidireccional.
+
+![image](https://user-images.githubusercontent.com/91721590/146652433-34fc77da-b2ff-4848-87b1-05698b14b398.png)
+
 • Cuando Alef está en cualquier celda, puede elegir al azar y con la misma probabilidad moverse 
 a una de las celdas adyacentes que no contengan ningún obstáculo. Si esta celda contiene una 
 mina, la mina explota y Alef muere. Si esta celda contiene una salida, Alef escapa del laberinto.
