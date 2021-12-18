@@ -76,3 +76,43 @@ def exploracion(Casillax, Casillay, laberinto, n , m, tuneles):
         laberintocopia[Casillax][Casillay]="#"
         probabilidad+=(exploracion(coordenadas.x,coordenadas.y, laberintocopia, n , m, tuneles)/den)
     return probabilidad
+
+#rellenamos lo que queda con nuestro código lotro ya estaba hecho
+
+if __name__ == '__main__':
+    print("Dimensiones del laberinto y número de tuneles:(filas columnas tuneles)")
+    first_multiple_input = input().rstrip().split()
+
+    n = int(first_multiple_input[0])
+
+    m = int(first_multiple_input[1])
+
+    k = int(first_multiple_input[2])
+    laberinto=[]
+    for n_itr in range(n):
+        print("Fila " + str(n_itr) + " del laberinto:(# muro,porcentaje salida, * bomba, $ vacia o tunel")
+        row = input()
+        laberinto.append(list(row))
+        # Write your code here
+    tuneles=[]
+    for k_itr in range(k):
+        print("Coordenadas(i1 j1 i2 j2) del tunel " +str(k_itr))
+        second_multiple_input = input().rstrip().split()
+
+        i1 = int(second_multiple_input[0])
+
+        j1 = int(second_multiple_input[1])
+
+        i2 = int(second_multiple_input[2])
+
+        j2 = int(second_multiple_input[3])
+        tuneles.append(Tunel(i1,j1,i2,j2))
+        # Write your code here
+        # Write your code here
+
+    print("Coordenadas iniciales de la rana:")
+    third_multiple_input = input().rstrip().split()
+    pos1= int(third_multiple_input[0])
+    pos2= int(third_multiple_input[1])
+    probabilidad= exploracion(pos1,pos2,laberinto,n,m,tuneles)
+    print(probabilidad)
