@@ -57,16 +57,6 @@ El código de una suma muy grande es:
 
 ```
 # 4.Ejercicio: La escalera
-Esta es una escalera de tamaño n= 4:
- #
- ##
-###
-####
-Su base y altura son iguales a n. Se dibuja mediante #símbolos y espacios. La última línea no está
-precedida por espacios.
-Escribe un programa que imprima una escalera de tamaño n.
-
-EJERCICIO: LA ESCALERA
 Esta es una escalera de tamaño n:
  #
  ##
