@@ -71,7 +71,7 @@ El diagrama de flujos es el siguiente:
 ![figma escalera](https://user-images.githubusercontent.com/91721888/146649222-6109df5a-2805-43cf-b55d-792c59e57f6b.png)
 
 
-El código de la esclaera es:
+El código de la escalera es:
 ```
 
 ```
