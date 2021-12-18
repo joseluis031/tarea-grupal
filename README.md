@@ -5,7 +5,7 @@ Nuestra dirección de github es: [Github](https://github.com/joseluis031/tarea-g
 
 Dada una matriz de números enteros N, tenemos que hacer la suma de sus elementos.
 
-El diagram de flujos es el siguiente:
+El diagrama de flujos es el siguiente:
 
 
 
