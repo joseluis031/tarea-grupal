@@ -11,7 +11,27 @@ El diagrama de flujos es el siguiente:
 
 
 El código de la suma simple de la matriz es el siguiente:
-```
+```import random
+
+matriz = [
+    [random.randint(0,10),random.randint(0,10)],
+    [random.randint(0,10),random.randint(0,10)]
+]
+def print_matriz(matriz):
+    for i in range(2):
+        print(matriz[i])
+        
+print_matriz(matriz)
+
+elementos = 0
+suma = 0
+
+for fila in matriz:
+    for elemento in fila:
+        suma += elemento
+        elementos += 1
+        
+print("la suma de los elementos de la matriz es:", suma)
 
 ```
 # 2.Ejercicio: Compara los problemas
@@ -39,7 +59,59 @@ El diagrama de flujos es el siguiente:
 
 
 El código de comparar los problemas es:
-```
+```from random import randint
+
+nota1 = randint(0,10)
+nota2 = randint(0,10)
+nota3 = randint(0,10)
+
+nota4 = randint(0,10)
+nota5 = randint(0,10)
+nota6 = randint(0,10)
+
+print("Las notas de Lucía son:\nClaridad del problema = {} \nOriginalidad = {} \nDificultad = {}".format(nota1,nota2,nota3))
+print("Las notas de Carlos son:\nClaridad del problema = {} \nOriginalidad = {} \nDificultad = {}".format(nota4,nota5,nota6))
+
+
+def comparar_Notas():
+    nota_total_Lucia = 0
+    nota_total_Carlos = 0
+    a = [nota1,nota2,nota3]
+    b = [nota4,nota5,nota6]
+    if a[0] > b[0]:
+        nota_total_Lucia += 1
+    elif a[0] < b[0]:
+        nota_total_Carlos += 1
+    else:
+        pass
+    
+    if a[1] > b[1]:
+        nota_total_Lucia += 1
+    elif a[1] < b[1]:
+        nota_total_Carlos += 1
+    else:
+        pass
+    
+    if a[2] > b[2]:
+        nota_total_Lucia += 1
+    elif a[2] < b[2]:
+        nota_total_Carlos += 1
+    else:
+        pass
+    c = nota1 + nota2 + nota3
+    d = nota4 + nota5 + nota6
+    print("La nota total de lucía es:", c)
+    print("La nota total de Carlos es:", d)
+    
+    if c > d:
+        print("Lucía tiene mas nota")
+    elif c < d:
+        print("Carlos tiene mas nota")
+    else:
+        print("Tienen la misma nota")
+comparar_Notas()
+
+
 
 ```
 # 3.Ejercicio: Una suma muy grande
@@ -53,7 +125,27 @@ El diagrama de flujos es el siguiente:
 
 
 El código de una suma muy grande es:
-```
+```import random
+
+matriz = [
+    [random.randint(1000,1000000), random.randint(1000,1000000),random.randint(1000,1000000)],
+    [random.randint(1000,1000000), random.randint(1000,1000000), random.randint(1000,1000000)]
+]
+def print_matriz(matriz):
+    for i in range(2):
+        print(matriz[i])
+        
+print_matriz(matriz)
+        
+elementos = 0
+suma = 0
+
+for fila in matriz:
+    for elemento in fila:
+        suma += elemento
+        elementos += 1
+        
+print("la suma de los elementos de la matriz es:", suma)
 
 ```
 # 4.Ejercicio: La escalera
@@ -72,7 +164,28 @@ El diagrama de flujos es el siguiente:
 
 
 El código de la escalera es:
-```
+```import math
+import os
+import random
+import re
+import sys
+#
+# Complete the 'staircase' function below.
+#
+# The function accepts INTEGER n as parameter.
+#
+def escalera(n):
+    for i in range(0, n):
+        linea = ""
+        for k in range(0,1-i):
+            linea = linea + ""
+        for j in range(0,i + 1):
+            linea = linea + "€"
+        print(linea)
+
+if __name__ == '__main__':
+   n = int(input("Introduce las dimensiones que desees de la escalera:").strip())
+escalera(n)
 
 ```
 # 5.Ejercicio: Juego de las piedras
@@ -94,7 +207,74 @@ El diagrama de flujos es el siguiente:
 
 
 El código del juego de las piedras es el siguiente:
-```
+```import random
+
+piedras_totales = random.randint(10,25)
+print("Hay",piedras_totales,"piedras")
+piedras_elegidas = 0
+
+def vs(piedras_totales,piedras_elegidas):
+    if piedras_totales == 2:
+        p = 2
+    elif piedras_totales == 3:
+        p = 3
+    elif piedras_totales == 4:
+        p = 3
+    elif piedras_totales == 5:
+        p = 5
+    elif piedras_totales == 6:
+        p = 5
+    elif piedras_totales >=7:
+        while True:
+            p = random.randint(2,5)
+            if p == 4:
+                pass
+            else:
+                break
+    return p
+
+
+turnos = 1
+while piedras_totales > 1:
+    if turnos == 1:
+        print("Turno del jugador 1")
+        piedras_elegidas = vs(piedras_totales, piedras_elegidas)
+        if piedras_elegidas == 2:
+            piedras_totales -= 2
+            print("Ha retirado 2 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 3:
+            piedras_totales -= 3
+            print("Ha retirado 3 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 5:
+            piedras_totales -= 5
+            print("Ha retirado 5 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        turnos = 2
+    elif turnos == 2:
+        print("Turno del jugador 2")
+        if piedras_elegidas == 2:
+            piedras_totales -= 2
+            print("Ha retirado 2 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 3:
+            piedras_totales -= 3
+            print("Ha retirado 3 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        elif piedras_elegidas == 5:
+            piedras_totales -=5
+            print("Ha retirado 5 piedras")
+            print("Quedan:", piedras_totales, "piedras")
+        turnos = 1
+while piedras_totales < 2:
+    if turnos == 2:
+        print("No puedes quitar mas piedras, ha ganado el jugador 1")
+        break
+    elif turnos == 1:
+        print("No puedes quitar mas piedras, ha ganado el jugador 2")
+        break
+    
 
 ```
 # 6.Ejercicio: Rana en laberinto
@@ -147,7 +327,23 @@ El diagrama de flujos es el siguiente;
 
 
 El código de estudiantes de calificación es:
-```
+```notas = [73,67,38,33]
+
+for i in range(len(notas)):
+    if notas[i] > 40:
+        print("El alumno {} ha aprobado".format(i+1))
+    else:
+        print("EL alumno {} ha suspendido".format(i+1))
+
+for i in range(len(notas)):
+    cociente = int(notas[1]/5 + 1)
+    multiplo = cociente * 5
+    if (multiplo-notas[i]) <= 3:
+        print("La nota del alumno {} queda aproximada, su nueva nota es {}".format(i + 1, multiplo))
+    elif notas[i] < 40:
+        print("El alumno {} mantiene su nota".format(i + 1,notas[i]))
+    else:
+        pass        
 
 ```
 # 8. Ejercicio: Manzana y naranja
@@ -170,7 +366,38 @@ El diagrama de flujos es el siguiente:
 
 
 El código de la manzana y la naranja es el siguiente:
-```
+```import math
+import os
+import random
+import re
+import sys
+
+def contador(a, b, c, d, manzanas, naranjas):
+    manzanas_en_caja = 0
+    naranjas_en_caja = 0
+    for manzana in manzanas:
+        if(c+manzana >= a and c+manzana <= b):
+            manzanas_en_caja +=1
+    for naranja in naranjas:
+        if(d+naranja >= a and d+naranja <= b):
+            naranjas_en_caja +=1
+    print("Han caido " +str(manzanas_en_caja) + " manzanas dentro")
+    print("Han caido " + str(naranjas_en_caja) + " naranjas dentro")
+
+if __name__ == '__main__':
+    first_multiple_input = input().rstrip().split()
+a = int(first_multiple_input[0])
+b = int(first_multiple_input[1])
+second_multiple_input = input().rstrip().split()
+c = int(second_multiple_input[0])
+d = int(second_multiple_input[1])
+third_multiple_input = input().rstrip().split()
+m = int(third_multiple_input[0])
+n = int(third_multiple_input[1])
+
+manzanas = list(map(int, input().rstrip().split()))
+naranjas = list(map(int, input().rstrip().split()))
+contador(a, b, c, d, manzanas, naranjas)
 
 ```
 
