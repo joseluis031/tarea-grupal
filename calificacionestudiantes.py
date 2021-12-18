@@ -19,7 +19,7 @@ def notas_2estudiante():
     elif notas[1] > 40:
         b = multiplos_5_apartirde_40[6] - notas[1]
         if b <= 3:
-            print("La nota de estudiante 2 se redondeará a 75")
+            print("La nota de estudiante 2 se redondeará a 70")
             
 notas_2estudiante()
 
